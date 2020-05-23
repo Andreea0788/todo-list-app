@@ -4,7 +4,6 @@ import "./App.css";
 
 function App() {
   // We need a list of todo's
-  // useState
 
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
@@ -14,6 +13,15 @@ function App() {
     setTodos([...todos, input]);
     setInput("");
   };
+
+  // The delete Button
+
+  function deleteTodo(e) {
+    e.preventDefault();
+    let index = e.target.value;
+    todos.splice(index, 1);
+    setTodos([...todos]);
+  }
 
   return (
     <div className="app">
@@ -38,8 +46,13 @@ function App() {
           </form>
         </div>
 
-        {todos.map((todo) => (
-          <Todo title={todo} />
+        {todos.map((todo, index) => (
+          <Todo
+            title={todo}
+            key={index}
+            value={index}
+            deleteTodo={deleteTodo}
+          />
         ))}
       </div>
     </div>
