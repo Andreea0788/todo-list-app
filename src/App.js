@@ -8,6 +8,8 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
   const handleSubmit = (e) => {
+    // 1) add whatever is in the input to the todos array
+    // 2) clear the input field
     e.preventDefault();
 
     setTodos([...todos, input]);
