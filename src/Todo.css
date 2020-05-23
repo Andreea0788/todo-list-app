@@ -1,0 +1,23 @@
+.todo {
+  padding: 5px 20px 5px 20px;
+  border-bottom: 1px solid #2f4f4f;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  margin: auto;
+}
+
+.delete-btn {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  background-color: #d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}

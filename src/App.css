@@ -1,0 +1,48 @@
+.app {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.container {
+  min-height: 495px;
+  justify-content: center;
+  background-color: white;
+  width: 40%;
+  margin: 5% auto;
+  padding: 0;
+  border: 1px solid #fefefe;
+  box-shadow: 0 3px 6px #555;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px 0;
+}
+
+.todo-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.submit-btn {
+  color: #2f4f4f;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.input-box,
+.submit-btn {
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #2f4f4f;
+  border-radius: 4px;
+}
